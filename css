@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor{
+    max-width: 100%;
+    margin: 0;
+    /* overflow: hidden; */
+    
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* BARRA DE NAVEGACION */
+
+.navegacion{
+    width: 100%;
+    margin: 10px;
+    background: none;
+    float: left;
+    margin-left: 500px;
+    
+}
+
+.navegacion ul{
+    list-style: none;
+    float: left;
+    padding-right: 30px;
+    
+}
+
+*/* MENU */
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #DE691C;
+    transition: all .3s;
+}
+
+/* SUBMENU */
+
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 180px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display: inline-block;
+    padding: 10px 30px 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* BOTON */
+
+.boton {
+    background-color: #DE691C; 
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 500px;
+    margin: 8px 0px 10px 0px;
+    font-weight: bold;
+  }
+ 
+  .boton:hover {
+    
+        background-color: rgba(255, 166, 0, 0.534); 
+        color: white;
+  }
+
+/* LOGO WWF */
+
+ .logowwf{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: -400px;
+    
+ }
+
+
+
+ /* BANNER */
+
+ .banner{
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 50px);
+	background-color: #F5F5F5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('https://imgur.com/QBXaddF');
+	animation: banner 28s infinite linear;
+}
+.banner-content{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	background-color: rgba(0, 22, 40, .6);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.banner-content h1{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+	font-size: 64px;
+    font-weight: bold;
+    color: white;
+	text-align: left;
+}
+.banner-content a{
+	text-decoration: none;
+    font-weight: 600;
+	color: #FFF;
+	padding: 9px 20px;
+	border: 3px solid #FFF;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+}
+.banner-content a:hover{
+	background-color: #308054;
+	color: white;
+    border: 3px solid #308054;
+}
+
+
+/* SOBRE NOSOTROS */
+
+.sobrenosotros {
+    width: 100%;
+    height: 523px;
+    background-color: #E6E6E6;
+}
+
+.sobrenosotros h2 {
+    font-size: 40px;
+    padding: 80px 0px 25px 282px;
+    font-weight: bold;
+    color: #308054;
+}
+
+.sobrenosotros p {
+    font-size: 18px;
+    color: black;
+    padding: 0px 50px 0px 282px;
+
+}
+
+.sobrenosotros img {
+    float: right;
+    padding: 0px 300px 10px 0px;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    width: 100%;
+    height: 312px;
+    background-color: #308054;
+}
+
+.newsletter h3 {
+    padding: 50px 0px 20px 282px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.newsletter p{
+  
+    font-size: 18px;
+    color: white;
+    padding: 0px 0px 20px 282px;
+}
+
+/* CAJA DE TEXTO */
+
+
+div#news-cont {
+    display: table;
+    width: 600px;
+    margin: 10px 0px 20px 282px;
+
+  }
+  div#news-cont div.cell {
+    display: table-cell;
+  }
+  div#news-cont div.cell:last-child {
+    width: 1px;
+  }
+  
+  input[type=search], div.button {  
+    width: 100%;
+    height: 45px;
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    font-family: inherit;
+    font-size: 18px;
+  }
+  
+  input[type=search] {
+    margin: 0;
+    padding: 0 10px;
+    
+    background-color: #D9D9D9;
+    
+    border: 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  
+  div.button {
+    line-height: 45px;
+  
+    margin: 0;
+    padding: 0 20px;
+  
+    color: #fff;
+    background-color: #DE691C;
+    font-weight: bold;
+    
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    
+    white-space: nowrap;
+  }
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #black;
+}
